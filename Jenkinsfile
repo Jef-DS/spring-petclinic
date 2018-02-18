@@ -18,5 +18,6 @@ pipeline {
 	   input 'Akkoord om te deployen?'
 	   echo 'Deploying...'
 	}
+     }
   }
 }
