@@ -13,5 +13,10 @@ pipeline {
 	   archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
 	}
      }
+     stage('Deploy') {
+        steps {
+	   input 'Akkoord om te deployen?'
+	   echo 'Deploying...'
+	}
   }
 }
