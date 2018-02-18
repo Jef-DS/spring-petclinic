@@ -1,5 +1,5 @@
 pipeline {
-  agent { docker 'maven:3.5.2-alpine' }
+  agent { docker 'maven:3.5.2' }
   stages {
      stage('Checkout') {
         steps {
